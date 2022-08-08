@@ -410,6 +410,11 @@ video {
   height: auto;
 }
 
+h1 {
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
 *, ::before, ::after {
   --tw-border-spacing-x: 0;
   --tw-border-spacing-y: 0;
@@ -692,10 +697,6 @@ video {
   border-radius: 9999px;
 }
 
-.rounded-sm {
-  border-radius: 0.125rem;
-}
-
 .bg-gray-100 {
   --tw-bg-opacity: 1;
   background-color: rgb(243 244 246 / var(--tw-bg-opacity));
@@ -758,7 +759,15 @@ video {
   transition-duration: 500ms;
 }
 
-/* group utilities */
+/* to override default styles */
+
+/* to add components */
+
+/* to add custom utilities */
+
+.text-body {
+  font-size: 800px;
+}
 
 .selection\:bg-green-500 *::-moz-selection {
   --tw-bg-opacity: 1;
@@ -865,6 +874,11 @@ video {
 
   .sm\:text-left {
     text-align: left;
+  }
+
+  .sm\:happy {
+    cursor: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/9632/happy.png'),
+      auto;
   }
 
   @media (prefers-color-scheme: dark) {

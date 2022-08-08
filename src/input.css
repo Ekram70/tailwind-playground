@@ -2,8 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 
-/* group utilities */
+/* to override default styles */
+@layer base {
+  h1 {
+    @apply text-2xl;
+  }
+}
 
+/* to add components */
 @layer components {
   .btn {
     @apply px-4 py-1 border rounded-full text-sm  font-semibold  duration-300 hover:text-white hover:border-transparent focus:outline-none focus:ring-2 focus:ring-offset-2 dark:focus:ring-offset-gray-800;
@@ -16,4 +22,21 @@
   .btn-green {
     @apply border-green-200 text-green-600  hover:bg-green-600 focus:ring-green-600 dark:text-green-400;
   }
+}
+
+/* to add custom utilities */
+@layer utilities {
+  .happy {
+    cursor: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/9632/happy.png'),
+      auto;
+  }
+
+  .sad {
+    cursor: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/9632/sad.png'),
+      auto;
+  }
+}
+
+.text-body {
+  font-size: 800px;
 }
